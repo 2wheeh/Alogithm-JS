@@ -1,0 +1,1 @@
+v => parseInt(v)
