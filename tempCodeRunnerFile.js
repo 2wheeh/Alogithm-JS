@@ -1,1 +1,1 @@
-v => parseInt(v)
+num1 % num2
