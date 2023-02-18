@@ -8,4 +8,6 @@ const solution = n => {
     return numInTown[n - 1];
 };
 
+// toString => ''+num 으로도 가능
+
 console.log(solution(input));
