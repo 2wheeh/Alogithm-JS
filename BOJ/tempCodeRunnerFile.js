@@ -1,16 +1,9 @@
-const fs = require("fs");
-const input = parseInt(fs.readFileSync("./BOJ/1065.txt").toString().trim());
+widthCut
+//     .sort()
+//     .push(0)
+//     .push(width + 1);
 
-const solution = n => {
-    if (n < 100) return n;
-
-    const numbers = new Array(1001).fill(0);
-    for (let i = 100; i <= n; i++) {
-        const arr = [...i.toString()].map(v => parseInt(v));
-        if (arr[0] + arr[2] === 2 * arr[1]) numbers[i] = 1;
-    }
-
-    return 99 + numbers.reduce((acc, cur) => acc + cur, 0);
-};
-
-console.log(solution(input));
+// heightCut
+//     .sort()
+//     .push(0)
+//     .push(height + 1);
