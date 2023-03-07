@@ -77,14 +77,14 @@ class PriorityQueue extends minHeap {
 }
 
 const fs = require("fs");
-const input = fs.readFileSync("./BOJ/11279.txt").toString().trim().split("\n");
+const [N, ...input] = fs.readFileSync("./BOJ/11279.txt").toString().trim().split("\n");
 
 const solution = input => {
     const pq = new PriorityQueue();
 
     let ans = "";
 
-    input.slice(1).forEach(el => {
+    input.forEach(el => {
         Number(el) ? pq.enqueue(-1 * Number(el), el) : (ans += `${pq.dequeue().value}\n`);
     });
 
