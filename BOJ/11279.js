@@ -77,7 +77,7 @@ class PriorityQueue extends minHeap {
 }
 
 const fs = require("fs");
-const [N, ...input] = fs.readFileSync("./BOJ/11279.txt").toString().trim().split("\n");
+const [_, ...input] = fs.readFileSync("./BOJ/11279.txt").toString().trim().split("\n");
 
 const solution = input => {
     const pq = new PriorityQueue();
