@@ -1,1 +1,1 @@
-return ret
+1
